@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200">
+  <rect width="800" height="200" fill="#ffffff"/>
+  <text x="40" y="40" font-family="Segoe UI" font-size="18" fill="#1d3557">Suggested Tests (Sample)</text>
+  <text x="50" y="80" font-size="14" fill="#333">• Add API test: Get Payment History (Payments - 3 open bugs)</text>
+  <text x="50" y="110" font-size="14" fill="#333">• Add API test: Upload Profile Image (Profile - 1 open bug)</text>
+  <text x="50" y="140" font-size="14" fill="#333">• Add API test: Search Response Time (Search - 1 open bug)</text>
+</svg>

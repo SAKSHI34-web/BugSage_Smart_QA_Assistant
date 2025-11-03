@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard – BugSage</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Bug Dashboard</h1>
+    <p><strong>{{ total_bugs }}</strong> open bugs in Jira</p>
+    <canvas id="chart" height="120"></canvas>
+    <h2>High-Risk Modules (Suggested Tests)</h2>
+    <ul class="suggestions">
+      {% for s in suggestions %}
+        <li><strong>{{ s.module }}</strong>: {{ s.test_name }} <em>({{ s.reason }})</em></li>
+      {% endfor %}
+    </ul>
+    <a class="btn" href="/">Back</a>
+  </div>
+  <script>
+    const labels = {{ modules.keys() | list | tojson }};
+    const values = {{ modules.values() | list | tojson }};
+    new Chart(document.getElementById('chart'), {
+      type: 'doughnut',
+      data: {
+        labels: labels,
+        datasets: [{
+          data: values,
+          backgroundColor: ['#e63946', '#f1c453', '#a8dadc', '#457b9d', '#8ecae6', '#ffb703']
+        }]
+      },
+      options: { responsive: true, maintainAspectRatio: false }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300">
+  <rect width="800" height="300" fill="#ffffff"/>
+  <text x="40" y="40" font-family="Segoe UI" font-size="20" fill="#1d3557">BugSage Dashboard (Sample)</text>
+  <rect x="40" y="60" width="220" height="140" fill="#f1f1f1" rx="8"/>
+  <text x="50" y="90" font-size="14" fill="#333">Total Bugs</text>
+  <text x="50" y="120" font-size="28" fill="#e63946">5</text>
+  <rect x="290" y="60" width="440" height="200" fill="#fafafa" stroke="#eee" rx="8"/>
+  <text x="300" y="90" font-size="14" fill="#333">Module Trend</text>
+  <rect x="320" y="120" width="30" height="100" fill="#e63946"/>
+  <rect x="360" y="100" width="30" height="120" fill="#f1c453"/>
+  <rect x="400" y="140" width="30" height="80" fill="#a8dadc"/>
+  <rect x="440" y="80" width="30" height="140" fill="#457b9d"/>
+  <text x="320" y="235" font-size="12" fill="#333">Payments</text>
+  <text x="360" y="235" font-size="12" fill="#333">Profile</text>
+  <text x="400" y="235" font-size="12" fill="#333">Search</text>
+  <text x="440" y="235" font-size="12" fill="#333">Auth</text>
+</svg>
