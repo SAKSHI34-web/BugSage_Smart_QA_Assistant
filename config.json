@@ -1,7 +1,7 @@
 {
   "jira": {
     "url": "https://your-domain.atlassian.net",
-    "email": "you@example.com",
+    "email": "sakshisarohi@gmail.com",
     "token": "your_jira_api_token",
     "project": "QA"
   },
